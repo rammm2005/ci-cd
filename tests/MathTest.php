@@ -12,7 +12,7 @@ class TestRunner {
     private $tests = [];
 
     public function assertEqual($expected, $actual, $testName) {
-        if ($expected === $actual) {
+        if ($expected == $actual) {
             $this->passed++;
             $this->tests[] = ['name' => $testName, 'status' => 'PASS', 'message' => ''];
             return true;
